@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    position: relative;
+    margin: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    top: -25px;
+  }
+  
+  .homeyimage {
+    background-image: url(/umer_folder/web_pics/home_image.PNG);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    height: 501px;
+    margin-top: -19px;
+  }
+  
+  .upper_most_body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffaa0e;
+    height: 4px;
+  }
+  
+  .features {
+    align-items: center;
+    display: flex;
+  
+  }
+  
+  .features ul {
+    display: flex;
+    list-style: none;
+    gap: 42px;
+    font-size: 17px;
+  
+  }
+  
+  .quicksand-gfont {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .dosis-dummset {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .abel-dummyver {
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  .text_of_logo {
+    display: flex;
+    justify-content: center;
+    width: 330px;
+    align-items: center;
+    gap: 24px;
+    font-size: 29px;
+  }
+  
+  .logo_image {
+    mix-blend-mode: color;
+  }
+  
+  .justrandom {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+  }
+  
+  .main-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 108px;
+    font-family: system-ui;
+  }
+  
+  .hassle_title {
+    text-align: center;
+    width: 1285px;
+    font-size: 18px;
+  }
+  
+  .lonely_text {
+    width: 1335px;
+    margin-top: 15px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 200px 200px;
+    gap: 29px;
+    justify-content: center;
+    width: 1492px;
+    column-gap: 43px;
+  }
+  
+  .items {
+    padding: 44px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .neigb_image{
+    background-image: url(/umer_folder/web_pics/neighbour_image_v2.PNG);
+    background-size: cover;
+    background-position: center;
+  }
+  .ran_image{
+    background-image: url(/umer_folder/web_pics/rent_image.PNG);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .rat_image{
+    background-image: url(/umer_folder/web_pics/adv_image.PNG);
+    background-size: cover;
+    background-position: center;
+  }
+  .agreem_image {
+    background-image: url(/umer_folder/web_pics/tam_image.PNG);
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .items a {
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    background-color: #e58239;
+    border-radius: 34px;
+    font-size: 18px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }

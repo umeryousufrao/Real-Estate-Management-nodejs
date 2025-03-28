@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+     <link rel="stylesheet" href="/umer_folder/css_files/signup_style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     
+</head>
+<body>
+    <div class="container">
+        <div class="signup-form">
+            <h2>Create Account</h2>
+            <form id="newsignup_form" action="/submit_n" method="POST">
+                <div class="input-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Enter first name" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Enter last name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="cnic">CNIC  -----  Don't use hyphen (-)</label>
+                    <input type="tel" id="cnic_no" name="cnic_no"  placeholder="Enter CNIC (0-9)" required>
+                </div>
+                <div class="input-group">
+                    <label for="contact-no">Contact No</label>
+                    <input type="tel" id="contact_no" name="contact_no"  placeholder="Enter contact no (0-9)" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password_v" name="password_v" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="submit-btn">Create</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

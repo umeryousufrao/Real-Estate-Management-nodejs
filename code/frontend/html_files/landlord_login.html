@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/umer_folder/css_files/login_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h2>Login / Sign Up Of LandLord</h2>
+            <form id="loginsignup_form" action="/login" method="POST">
+                <div class="input-group">
+                    <label for="user_id">LandLord ID</label>
+                    <input type="text" id="landlord_id" name="landlord_id" placeholder="Enter ID" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password_n" name="password_n" placeholder="Enter password" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

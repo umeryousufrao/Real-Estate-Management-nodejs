@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrar Motu</title>
+    <link rel="stylesheet" href="/umer_folder/css_files/tenant_disp.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="upper-part">
+        <header>
+            <section class="upper_most_body">
+            </section>
+            <br>
+            <section class="homeyimage">
+                <br>
+                <nav>
+                    <div class="features quicksand-gfont">
+                        <ul>
+                            <li>Home</li>
+                            <li>Rent</li>
+                            <li>Property</li>
+                            <li>About Us</li>
+                        </ul>
+                    </div>
+                    <div class="text_of_logo">
+                        <div class="logo_image">
+                            <img src="/umer_folder/web_pics/home_logo.PNG" alt="">
+                        </div>
+                        <div class="quicksand-gfont">
+                            Homes
+                        </div>
+                    </div>
+                    <div class="justrandom quicksand-gfont">
+                        Profile
+                    </div>
+                </nav>
+                <br>
+                <section class="main-title quicksand-gfont">
+                    <h1> Find a home in neighborhood you love.</h1>
+                </section>
+            </section>
+        </header>
+    </div>
+    <div class="lower-part">
+        <main>
+            <br>
+            <div class="hassle_title dosis-dummset">
+                <h1>Trusted by 100 Million Buyers</h1>
+                <p class="lonely_text quicksand-gfont">
+                    Only Homes connect you to the most loved house in your neighborhood.
+                </p>
+            </div>
+            <br>
+            <section>
+                <span class="grid-container">
+                    <div class="items neigb_image quicksand-gfont">
+                        <a href="#" id="profileLink">View Profile</a>
+                    </div>
+                     <div class="items ran_image quicksand-gfont">
+                        <a href="#" id="advertiseLink">Advertised Properties</a>
+                    </div> 
+                </span>
+            </section>
+        </main>
+    </div>
+    <br>
+    <script>
+        $(document).ready(function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const userId = urlParams.get('userId');
+            $('#userId').val(userId); 
+            $('#profileLink').attr('href', `/profile?userId=${userId}`);
+            $('#advertiseLink').attr('href', `/advertisements?userId=${userId}`);
+        });
+    </script>
+</body>
+</html>

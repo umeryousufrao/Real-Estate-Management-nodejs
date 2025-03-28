@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertising Management</title>
+    <link rel="stylesheet" href="/umer_folder/css_files/landlord_advertise_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Advertisment Management</h1>
+    <h2>Manage Advertisements</h2>
+    <input type="hidden" id="userId" value="">
+
+    <table id="advertisementTable" border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Advertisement Expense</th>
+                <th>Status</th>
+                <th>Demanded Rent</th>
+                <th>Property Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h3>Add a New Advertisement</h3>
+    <form id="addAdvertisementForm">
+        <label for="propertySelect">Property:</label>
+        <input type="text" id="propertySelect" required>
+
+        <label for="advertisementExpense">Expense:</label>
+        <input type="text" id="advertisementExpense" required>
+
+        <label for="advertisementStatus">Status:</label>
+        <select id="advertisementStatus" required>
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+        </select>
+
+        <label for="demandedRent">Demanded Rent:</label>
+        <input type="text" id="demandedRent" required>
+
+        <button type="submit">Add Advertisement</button>
+    </form>
+
+    <script src="/umer_folder/js_scripts/landlord_advertise_script.js"></script>
+</body>
+
+</html>

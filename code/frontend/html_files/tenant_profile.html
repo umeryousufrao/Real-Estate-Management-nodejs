@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Profile</title>
+  <link rel="stylesheet" href="/umer_folder/css_files/tenant_profile_style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+</head>
+<body>
+  <h1>Your Profile</h1>
+  <table id="profileTable" border="1">
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>CNIC Number</th>
+        <th>Contact Number</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <div id="editProfileModal" style="display:none;">
+    <h3>Edit Profile</h3>
+    <form id="editProfileForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required>
+
+      <label for="cnicNo">CNIC Number:</label>
+      <input type="text" id="cnicNo" required>
+
+      <label for="contactNo">Contact Number:</label>
+      <input type="text" id="contactNo" required>
+
+      <button type="submit">Save Changes</button>
+      <button type="button" id="cancelEdit">Cancel</button>
+    </form>
+  </div>
+
+  <script src="/umer_folder/js_scripts/tenant_profile_script.js"></script>
+</body>
+</html>

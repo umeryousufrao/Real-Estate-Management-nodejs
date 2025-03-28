@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Management</title>
+    <link rel="stylesheet" href="/umer_folder/css_files/landlord_property_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Property Management Dashboard</h1>
+    <h3>Manage Your Properties</h3>
+    <input type="hidden" id="userId" value="">
+
+    <table id="propertyTable" border="1">
+        <thead>
+            <tr>
+                <th>Property ID</th>
+                <th>Value</th>
+                <th>Address</th>
+                <th>Type</th>
+                <th>Size</th>
+                <th>No. of Previous Residents</th>
+                <th>Your id</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <h3>Add a New Property</h3>
+    <form id="addPropertyForm">
+        <label for="propertyValue">Property Value:</label>
+        <input type="text" id="propertyValue" required>
+
+        <label for="propertyAddress">Address:</label>
+        <input type="text" id="propertyAddress" required>
+
+        <label for="propertyType">Type:</label>
+        <input type="text" id="propertyType" required>
+
+        <label for="propertySize">Size:</label>
+        <input type="text" id="propertySize" required>
+
+        <label for="noPrevResidents">No. of Previous Residents:</label>
+        <input type="text" id="noPrevResidents" required>
+
+        <button type="submit">Add Property</button>
+    </form>
+
+    <script src="/umer_folder/js_scripts/landlord_prop_script.js"></script>
+</body>
+
+</html>
